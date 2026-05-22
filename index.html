@@ -1,25 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Operator Aritmatika</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        .header {
+            background: white;
+            color:black;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    
+    box-shadow: 0 0 10px rgb(186, 181, 253),
+                0 0 20px rgb(167, 178, 228),
+                0 0 40px pink;
+  border-radius: 20px;
+          
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: pink;
+            background-image: url('WhatsApp Image 2026-05-11 at 10.45.58.jpeg');
+            background-size: cover;26
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+        .btn button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background: lightgreen;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .progress {
+            background: lightgray;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background: pink;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Latihan Operator Aritmatika</h1>
-        <H2>Hasil Latihan</H2>
 
-        <script>
-            var a = 20;
-            var b = 4;
+<div class="header">My Profile</div>
 
-            document.write( `<p>${a} + ${b} = <span>${a + b}</span></p>` );
-            document.write( `<p>${a} * ${b} = <span>${a * b}</span></p>` );
-            document.write( `<p>${a} / ${b} = <span>${a / b}</span></p>` );
-            document.write( `<p>${a} % ${b} = <span>${a % b}</span></p>` );
-        </script>
+<div class="container">
+
+
+    <div class="card profile">
+        <img src="data:image/jpeg;base64,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" alt="foto profile">
+        <h3>Annisa Shafira</h3>
+        <p>SMK An Nur</p>
+        <p>Depok</p>
+        <div class="btn">
+            <button>Follow</button>
+            <button>Message</button>
+        </div>
     </div>
+
+  
+    <div class="card">
+        <h3>Data Diri</h3>
+        <p>Full Name: Annisa Shafira</p>
+        <p>Email: annisashafiraa13@gmail.com</p>
+        <p>Phone: 081359772834</p>
+        <p>Address: Depok</p>
+    </div>
+
+    
+    <div class="card">
+        <h3>Social Media</h3>
+        <p>Website: nisa.com</p>
+        <p>Instagram: @nm4nyanis4_</p>
+    </div>
+
+  
+    <div class="card">
+        <h3>Project</h3>
+
+        <p>HTML</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 100%;"></div>
+        </div>
+        <p>CSS</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:85%;"></div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 80%;"></div>
+        </div>
+
+</div>
+
 </body>
 </html>
